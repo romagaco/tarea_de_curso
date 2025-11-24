@@ -1,0 +1,185 @@
+body {
+    background-color: #242020;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #861919;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.back {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #741986;
+    border-radius: 10px;
+}
+
+.colorSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #861919;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ejercicio 3 estilos */
+#tareas-list {
+    padding: 20px;
+    background-color: #19235a;
+    border: 1px solid #7c6dd3;
+    gap: 20px;
+    width: 50%;
+}
+
+
+.comment-container {
+    padding: 20px;
+    border-bottom: 1px solid #116315;
+    background-color: #4c8f20;
+    margin: 20px;
+    width: 50%;
+}
+
+.comment-container>div:first-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.comment-container button {
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.comment-container button:hover {
+    background-color: #cc0000;
+}
+
+/* ejercicio 4 estilos */
+
+.filtro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 4px 8px rgba(66, 153, 225, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ejercicio 5 estilos */
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.20);
+    color: yellowgreen;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.30);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.operator-btn {
+    background-color: rgba(255, 166, 0, 0.40);
+}
+
+.operator-btn:hover {
+    background-color: rgba(255, 166, 0, 0.60);
+}
+
+.operator-btn:active {
+    background-color: rgba(255, 166, 0, 0.80);
+}

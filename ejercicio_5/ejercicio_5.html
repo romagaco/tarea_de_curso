@@ -4,12 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>ejercicio 5</title>
     <script src="ejercicio_5.js"></script>
 </head>
 
 <body>
-    <h1>Ejercicio 5</h1>
+    <header>
+        <h1>Ejercicio 5</h1>
+        <ul>
+            <li class="back"><a href="../index.html">BACK</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="calculator-container">
+            <h2>Calculadora</h2>
+            <div id="calculator">
+                <input id="display" readonly>
+                <div id="keys">
+                    <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="clearDisplay()" class="operator-btn">c</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
