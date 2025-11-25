@@ -6,12 +6,13 @@
 
 ## 📋 Descripción
 
-- **Objetivo**: Demostrar conocimientos en JS puro mediante mini-ejercicios interactivos, como calculadoras simples, validadores de formularios y animaciones básicas.
+- **Objetivo**: Demostrar conocimientos en JS puro mediante mini-ejercicios interactivos, como calculadoras simples, uso de LocalStorage, etc.
+
 - **Tecnologías usadas**:
   - HTML5
   - CSS3 (estilos vanilla)
   - JavaScript ES6+
-- **Estado**: En desarrollo. ¡Agrego más features semanalmente!
+
 
 Visita la [demo en GitHub Pages](https://romagaco.github.io/tarea_de_curso/) para probarlo en vivo.
 
@@ -30,15 +31,6 @@ https://github.com/romagaco/tarea_de_curso
 
 1. **Ejecuta localmente**: Doble-clic en `index.html` o usa un servidor local como Live Server en VS Code.
 2. **Pruebas interactivas**: Navega por las secciones del sitio y experimenta con los scripts JS.
-3. **Ejemplo rápido de JS vanilla** (del archivo `script.js`):
-```javascript
-// Ejemplo: Manipulación del DOM y evento click
-document.addEventListener('DOMContentLoaded', function() {
-    const boton = document.getElementById('miBoton');
-    boton.addEventListener('click', function() {
-        alert('¡JS vanilla funciona perfectamente en GitHub Pages!');
-    });
-});
 
 🗂️ Estructura del Proyecto
 
