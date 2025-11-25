@@ -11,7 +11,7 @@ function formatearTiempo(valor) {
 
 // Función para actualizar el display del temporizador
 function actualizarDisplay() {
-    const display = document.getElementById('display');
+    const display = document.getElementById('display6');
     display.textContent =
         formatearTiempo(horas) + ':' +
         formatearTiempo(minutos) + ':' +

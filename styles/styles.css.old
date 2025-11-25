@@ -1,0 +1,895 @@
+body {
+    background-color: #242020;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #861919;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.back {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #741986;
+    border-radius: 10px;
+}
+
+.colorSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #861919;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ejercicio 3 estilos */
+
+.tarea-container-ejercicio3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tareas-list {
+    padding: 20px;
+    background-color: #19235a;
+    border: 1px solid #7c6dd3;
+    gap: 20px;
+}
+
+
+.comment-container {
+    padding: 20px;
+    border-bottom: 1px solid #116315;
+    background-color: #4c8f20;
+    margin: 20px;
+    width: 50%;
+}
+
+.comment-container>div:first-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.comment-container button {
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.comment-container button:hover {
+    background-color: #cc0000;
+}
+
+/* ejercicio 4 estilos */
+
+.filtro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 4px 8px rgba(66, 153, 225, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ejercicio 5 estilos */
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.20);
+    color: yellowgreen;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+.btnEjercicio5 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.30);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnEjercicio5:hover {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.btnEjercicio5:active {
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.operator-btn {
+    background-color: rgba(255, 166, 0, 0.40);
+}
+
+.operator-btn:hover {
+    background-color: rgba(255, 166, 0, 0.60);
+}
+
+.operator-btn:active {
+    background-color: rgba(255, 166, 0, 0.80);
+}
+
+/* ejercicio 6 estilos */
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#display6 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 20px;
+    width: 15%;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btnEjercicio6 {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnEjercicio6:hover {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.btnEjercicio6:active {
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+/* ejercicio 7 estilos */
+
+.password-container-ejercicio7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.password-container-ejercicio7 h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-group-ejercicio7 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group-ejercicio7 label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-ejercicio7 {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-ejercicio7:focus {
+    border-color: #4299e1;
+    box-shadow: 0 4px 8px rgba(66, 153, 225, 0.2);
+}
+
+.btn-ejercicio7 {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn-ejercicio7:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+}
+
+.btn-ejercicio7:active {
+    transform: translateY(0);
+}
+
+.password-display-ejercicio7 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.password-output-ejercicio7 {
+    flex: 1;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+.copy-btn-ejercicio7 {
+    padding: 15px 20px;
+    font-size: 24px;
+    background-color: rgba(255, 166, 0, 0.40);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-btn-ejercicio7:hover {
+    background-color: rgba(255, 166, 0, 0.60);
+    transform: scale(1.1);
+}
+
+.copy-btn-ejercicio7:active {
+    transform: scale(0.95);
+}
+
+.error-ejercicio7 {
+    padding: 15px;
+    background-color: rgba(220, 38, 38, 0.2);
+    color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+/* ejercicio 8 estilos */
+
+.contador-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.text-container-ejercicio8 {
+    width: 50%;
+    height: 100px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+
+    .operator-btn:active {
+        background-color: rgba(255, 166, 0, 0.80);
+    }
+
+    /* ejercicio 6 estilos */
+
+    .timer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #display6 {
+        font-size: 5rem;
+        font-weight: bold;
+        margin: 20px;
+        width: 15%;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btnEjercicio6 {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .btnEjercicio6:hover {
+        background-color: rgba(0, 0, 0, 0.50);
+    }
+
+    .btnEjercicio6:active {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+
+    /* ejercicio 7 estilos */
+
+    .password-container-ejercicio7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+    }
+
+    .password-container-ejercicio7 h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .input-group-ejercicio7 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .input-group-ejercicio7 label {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .input-ejercicio7 {
+        padding: 12px;
+        font-size: 18px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #000;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .input-ejercicio7:focus {
+        border-color: #4299e1;
+        box-shadow: 0 4px 8px rgba(66, 153, 225, 0.2);
+    }
+
+    .btn-ejercicio7 {
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #4299e1;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+    }
+
+    .btn-ejercicio7:hover {
+        background-color: #3182ce;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+    }
+
+    .btn-ejercicio7:active {
+        transform: translateY(0);
+    }
+
+    .password-display-ejercicio7 {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .password-output-ejercicio7 {
+        flex: 1;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Courier New', monospace;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        outline: none;
+        letter-spacing: 2px;
+    }
+
+    .copy-btn-ejercicio7 {
+        padding: 15px 20px;
+        font-size: 24px;
+        background-color: rgba(255, 166, 0, 0.40);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .copy-btn-ejercicio7:hover {
+        background-color: rgba(255, 166, 0, 0.60);
+        transform: scale(1.1);
+    }
+
+    .copy-btn-ejercicio7:active {
+        transform: scale(0.95);
+    }
+
+    .error-ejercicio7 {
+        padding: 15px;
+        background-color: rgba(220, 38, 38, 0.2);
+        color: #ff6b6b;
+        border: 2px solid #ff6b6b;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* ejercicio 8 estilos */
+
+    .contador-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .text-container-ejercicio8 {
+        width: 50%;
+        height: 100px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 18px;
+        color: #000;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .contador-container h2 {
+        color: #1763c7;
+    }
+
+
+    /* ejercicio 9 estilos */
+
+    .tarea-container-ejercicio9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #app-ejercicio9 {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form-ejercicio9 {
+        background-color: whitesmoke;
+        padding: 20px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .form-ejercicio9 form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-ejercicio9 input[type="text"],
+    .form-ejercicio9 input[type="date"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #e2e8f0;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #000;
+    }
+
+    .form-ejercicio9 input[type="submit"] {
+        border: none;
+        background-color: darkslateblue;
+        color: white;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .form-ejercicio9 input[type="submit"]:hover {
+        background-color: #5a4a9f;
+        transform: translateY(-2px);
+    }
+
+    #eventsContainer-ejercicio9 {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-ejercicio9 {
+        border: solid 2px #ddd;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .event-ejercicio9:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .event-ejercicio9 .days-ejercicio9 {
+        text-align: center;
+        min-width: 80px;
+        background-color: darkslateblue;
+        padding: 10px;
+        border-radius: 8px;
+        color: white;
+    }
+
+    .event-ejercicio9 .days-ejercicio9 .days-number-ejercicio9 {
+        font-size: 32px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .event-ejercicio9 .days-ejercicio9 .days-text-ejercicio9 {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .event-ejercicio9 .event-name-ejercicio9 {
+        padding: 10px;
+        flex: 1;
+        font-weight: bold;
+        color: #333;
+        font-size: 18px;
+    }
+
+    .event-ejercicio9 .event-date-ejercicio9 {
+        padding: 10px;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .event-ejercicio9 .actions-ejercicio9 {
+        padding: 10px;
+    }
+
+    .bDelete-ejercicio9 {
+        border: none;
+        background-color: #dc3545;
+        padding: 8px 16px;
+        color: white;
+        border-radius: 5px;
+        color: #fff;
+        outline: none;
+        letter-spacing: 2px;
+    }
+
+    .copy-btn-ejercicio7 {
+        padding: 15px 20px;
+        font-size: 24px;
+        background-color: rgba(255, 166, 0, 0.40);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .copy-btn-ejercicio7:hover {
+        background-color: rgba(255, 166, 0, 0.60);
+        transform: scale(1.1);
+    }
+
+    .copy-btn-ejercicio7:active {
+        transform: scale(0.95);
+    }
+
+    .error-ejercicio7 {
+        padding: 15px;
+        background-color: rgba(220, 38, 38, 0.2);
+        color: #ff6b6b;
+        border: 2px solid #ff6b6b;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* ejercicio 8 estilos */
+
+    .contador-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .text-container-ejercicio8 {
+        width: 50%;
+        height: 100px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 18px;
+        color: #000;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .contador-container h2 {
+        color: #1763c7;
+    }
+
+
+    /* ejercicio 9 estilos */
+
+    .tarea-container-ejercicio9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #app-ejercicio9 {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form-ejercicio9 {
+        background-color: whitesmoke;
+        padding: 20px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .form-ejercicio9 form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-ejercicio9 input[type="text"],
+    .form-ejercicio9 input[type="date"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #e2e8f0;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #000;
+    }
+
+    .form-ejercicio9 input[type="submit"] {
+        border: none;
+        background-color: darkslateblue;
+        color: white;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .form-ejercicio9 input[type="submit"]:hover {
+        background-color: #5a4a9f;
+        transform: translateY(-2px);
+    }
+
+    #eventsContainer-ejercicio9 {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-ejercicio9 {
+        border: solid 2px #ddd;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .event-ejercicio9:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .event-ejercicio9 .days-ejercicio9 {
+        text-align: center;
+        min-width: 80px;
+        background-color: darkslateblue;
+        padding: 10px;
+        border-radius: 8px;
+        color: white;
+    }
+
+    .event-ejercicio9 .days-ejercicio9 .days-number-ejercicio9 {
+        font-size: 32px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .event-ejercicio9 .days-ejercicio9 .days-text-ejercicio9 {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .event-ejercicio9 .event-name-ejercicio9 {
+        padding: 10px;
+        flex: 1;
+        font-weight: bold;
+        color: #333;
+        font-size: 18px;
+    }
+
+    .event-ejercicio9 .event-date-ejercicio9 {
+        padding: 10px;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .event-ejercicio9 .actions-ejercicio9 {
+        padding: 10px;
+    }
+
+    .bDelete-ejercicio9 {
+        border: none;
+        background-color: #dc3545;
+        padding: 8px 16px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .bDelete-ejercicio9:hover {
+        background-color: #c82333;
+        transform: scale(1.05);
+    }
