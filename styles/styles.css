@@ -152,7 +152,7 @@ button {
     padding: 25px;
 }
 
-button {
+#btnEjercicio5 {
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -164,11 +164,11 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#btnEjercicio5:hover {
     background-color: rgba(0, 0, 0, 0.50);
 }
 
-button:active {
+#btnEjercicio5:active {
     background-color: rgba(0, 0, 0, 0.80);
 }
 
@@ -182,4 +182,40 @@ button:active {
 
 .operator-btn:active {
     background-color: rgba(255, 166, 0, 0.80);
+}
+
+/* ejercicio 6 estilos */
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#display6 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 20px;
+    width: 15%;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btnEjercicio6 {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnEjercicio6:hover {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.btnEjercicio6:active {
+    background-color: rgba(0, 0, 0, 0.80);
 }
