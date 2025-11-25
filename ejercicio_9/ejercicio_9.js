@@ -4,6 +4,7 @@ let arr = [];
 const eventName = document.querySelector("#eventName-ejercicio9");
 const eventDate = document.querySelector("#eventDate-ejercicio9");
 const buttonAdd = document.querySelector("#bAdd-ejercicio9");
+const clearCompletedBtn = document.querySelector("#clearCompleted-ejercicio9"); // Nuevo botón
 const eventsContainer = document.querySelector("#eventsContainer-ejercicio9");
 
 const json = load();
@@ -27,6 +28,12 @@ buttonAdd.addEventListener("click", (e) => {
     addEvent();
 });
 
+// Nuevo listener para borrar completadas
+clearCompletedBtn.addEventListener("click", (e) => {
+    events = events.filter(event => !event.completed);
+    save(JSON.stringify(events));
+    renderEvents();
+});
 
 function addEvent() {
     if (eventName.value === "" || eventDate.value === "") {
@@ -40,6 +47,7 @@ function addEvent() {
         id: (Math.random() * 100).toString(36).slice(3),
         name: eventName.value,
         date: eventDate.value,
+        completed: false // Nuevo: estado inicial
     };
 
     events.unshift(newEvent);
@@ -49,7 +57,6 @@ function addEvent() {
 
     renderEvents();
 }
-
 
 function dateDiff(d) {
     const targetDate = new Date(d);
@@ -62,8 +69,10 @@ function dateDiff(d) {
 
 function renderEvents() {
     const eventsHTML = events.map(event => {
+        const isCompleted = event.completed ? 'text-decoration: line-through; opacity: 0.6;' : ''; // Estilo para completadas
         return `
-        <div class="event-ejercicio9">
+        <div class="event-ejercicio9" style="${isCompleted}">
+            <input type="checkbox" class="complete-checkbox-ejercicio9" data-id="${event.id}" ${event.completed ? 'checked' : ''}>
             <div class="days-ejercicio9">
                 <span class="days-number-ejercicio9">${dateDiff(event.date)}</span>
                 <span class="days-text-ejercicio9">dias</span>
@@ -76,16 +85,28 @@ function renderEvents() {
             </div>
         </div>
         `;
-
-
     });
 
     eventsContainer.innerHTML = eventsHTML.join("");
+
+    // Listeners para checkboxes (marcar/desmarcar)
+    document.querySelectorAll(".complete-checkbox-ejercicio9").forEach(checkbox => {
+        checkbox.addEventListener("change", e => {
+            const id = checkbox.getAttribute("data-id");
+            const event = events.find(ev => ev.id === id);
+            if (event) {
+                event.completed = checkbox.checked;
+                save(JSON.stringify(events));
+                renderEvents(); // Refresca para aplicar estilos
+            }
+        });
+    });
+
+    // Listeners para eliminar individuales (sin cambios)
     document.querySelectorAll(".bDelete-ejercicio9").forEach(button => {
         button.addEventListener("click", e => {
             const id = button.getAttribute("data-id");
             events = events.filter(event => event.id !== id);
-
             save(JSON.stringify(events));
             renderEvents();
         });

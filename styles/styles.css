@@ -439,6 +439,29 @@ button {
     transform: translateY(-2px);
 }
 
+/* Nuevo: Estilo para el botón de borrar completadas, igual al submit */
+#clearCompleted-ejercicio9 {
+    border: none;
+    background-color: darkslateblue;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    /* Espacio arriba para separarlo del form */
+    width: 100%;
+    /* Para que ocupe el ancho completo como los inputs */
+    box-sizing: border-box;
+}
+
+#clearCompleted-ejercicio9:hover {
+    background-color: #5a4a9f;
+    transform: translateY(-2px);
+}
+
 #eventsContainer-ejercicio9 {
     background-color: whitesmoke;
     border-radius: 10px;
@@ -517,4 +540,9 @@ button {
 .bDelete-ejercicio9:hover {
     background-color: #c82333;
     transform: scale(1.05);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
 }
